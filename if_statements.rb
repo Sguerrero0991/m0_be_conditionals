@@ -34,8 +34,16 @@ end
 # Using the num_quarters variable defined below, determine
 # if you have enough money to buy a gumball. A gumball costs
 # two quarters.
+ 
+num_quarters = 0
+num_quarters1 = 1
+num_quarters2 = 2
 gumball = 2
-p gumball == num_quarters
+
+if gumball == num_quarters2
+  puts "I have enough money for a gumball"
+else puts "I don't have enough money for a gumball"
+end
 
 
 # Right now, the program will print
@@ -44,27 +52,28 @@ p gumball == num_quarters
 # conditional statement that prints only one or the other.
 if num_quarters == 2
   p "I have enough money for a gumball"
-else 
-  p "I don't have enough money for a gumball"
 end
 
 # Experiment with manipulating the value held within num_quarters
 # to make sure both conditions can be achieved.
 
-num_quarters = 0
-num_quarters1 = 1
-num_quarters2 = 2
-
-puts "I have enough money for a gumball"
-puts "I don't have enough money for a gumball"
-
+if num_quarters == 0
+  puts "I don't have enough money for a gumball"
+elsif num_quarters1 == 1
+  puts "I don't have enough money for a gumball"
+elsif num_quarters2 == 2
+  puts "I have enough money for a gumball"
+end
 
 #####################
 # Using the variables defined below, write code that will tell you
 # if you have the ingredients to make a pizza. A pizza requires 
 # at least two cups of flour and sauce.
-def cups_of_flour = 2
-if cups_of_flour && has_sauce = true 
+cups_of_flour = 2
+has_sauce = true
+
+
+if cups_of_flour && has_sauce == true 
   print "I can make pizza"
 end
 
@@ -79,3 +88,19 @@ end
 
 cups_of_flour = 1
 has_sauce = true
+
+if cups_of_flour && has_sauce == true
+  print "I cannot make pizza"
+end
+
+if cups_of_flour = 5 && has_sauce == false 
+  print "I cannot make pizza"
+end
+
+if cups_of_flour = 2 && has_sauce == true 
+  print "I can make pizza"
+end
+
+if cups_of_flour = 3 && has_sauce == true
+  print "I can make pizza"
+end
